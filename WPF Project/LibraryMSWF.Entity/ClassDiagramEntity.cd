@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LibraryMSWF.Entity.AcceptedBook">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAQAIAAAAAAAAAgAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>AcceptedBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.Entity.Book">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAQAAAIAAAAAQAAAAAAAAAAAAAAAAICAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.Entity.RequestedBook">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAQAAAAAAAAAAAgAAAAACAAAAQAAAAAAAAA=</HashCode>
+      <FileName>RequestedBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.Entity.ReturnedBook">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAQAAAAAAAAAAAgAAAAAAAAAEQAAAAAAAAA=</HashCode>
+      <FileName>ReturnedBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.Entity.User">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAgAAABAAAAAAQAACAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

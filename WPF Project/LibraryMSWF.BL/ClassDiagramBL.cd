@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LibraryMSWF.BL.AdminBL">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.BL.BookBL">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAEAAAAACAAAAAAAAAMAAAAAABAAAAAA=</HashCode>
+      <FileName>BookBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.BL.UserBL">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAQAAEAAAAAAAAAAABAAAABAACAA=</HashCode>
+      <FileName>UserBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.BL.UserRecieveBL">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAE=</HashCode>
+      <FileName>UserRecieveBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryMSWF.BL.UserRequestBL">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABCEAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserRequestBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

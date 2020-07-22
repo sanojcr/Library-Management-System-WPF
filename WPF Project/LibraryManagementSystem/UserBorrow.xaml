@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="LibraryManagementSystem.UserBorrow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManagementSystem"
+             mc:Ignorable="d" 
+              d:DesignHeight="362" d:DesignWidth="655">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="655" Margin="10,30,-10,0">
+            <DataGrid Height="333" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Margin="0,0,24,0" x:Name="dgBorrow" IsReadOnly="True" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Author" Binding="{Binding BookAuthor}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book ISBN" Binding="{Binding BookISBN}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Price" Binding="{Binding BookPrice}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Copies" Binding="{Binding BookCopies}"></DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Actions">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnRequest" Content=" Request " Click="BtnRequest_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <Label Content="Borrow Section" HorizontalAlignment="Left" Margin="496,-6,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20"/>
+
+    </Grid>
+</UserControl>

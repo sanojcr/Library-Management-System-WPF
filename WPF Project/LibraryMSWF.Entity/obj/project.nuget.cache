@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kHtWkAqiiw53YspuE2MSmnBVnIY7WbyGl8KCsjpZb75GRSIbgNe8IQd9fkZ2ADD/+kWn+56EmZ6VWRgo7FYKOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ideapad\\Desktop\\Team 1 Projects\\Parallel Projects\\Sanoj C R\\WPF\\WPF Project\\LibraryMSWF.Entity\\LibraryMSWF.Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

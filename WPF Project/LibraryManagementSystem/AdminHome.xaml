@@ -1,0 +1,26 @@
+﻿<Window x:Class="LibraryManagementSystem.AdminHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow" ResizeMode="NoResize"
+        Title="Admin Home" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/stanislav-kondratiev-6pO3QFkk7hQ-unsplash.jpg"/>
+    </Window.Background>
+    <Grid>
+        
+        <StackPanel HorizontalAlignment="Left" Height="362" Margin="127,33,0,0" VerticalAlignment="Top" Width="655" Name="adminStackPanel">
+           
+        </StackPanel>
+        <Button Content="Books"  HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="100" Name="BtnBooks" Click="BtnBooks_Click"/>
+        <Button Content="Users" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="100" Name="BtnUsers" Click="BtnUsers_Click"/>
+        <Button Content="Requests" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="100" Name="BtnRequests" Click="BtnRequests_Click"/>
+        <Button Content="Accepted" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="100" Name="BtnAccepted" Click="BtnAccepted_Click"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" Width="100" x:Name="BtnLogout" Click="BtnLogout_Click"/>
+        <Button Content="Return" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top" Width="100" x:Name="BtnReturn" Click="BtnReturn_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="LibraryManagementSystem.AdminUsers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManagementSystem"
+             mc:Ignorable="d" 
+            d:DesignHeight="362" d:DesignWidth="655">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="655" Margin="10,30,-10,0">
+            <DataGrid IsReadOnly="True" Height="332" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Margin="0,0,25,0" Name="dgUsers" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="User Id" Binding="{Binding UserId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="User Name" Binding="{Binding UserName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Admission No" Binding="{Binding UserAdNo}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Email Address" Binding="{Binding UserEmail}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Password" Binding="{Binding UserPass}"></DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Actions">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnEdit" Content=" Edit " Click="BtnEdit_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnDelete" Content=" Delete " Click="BtnDelete_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+
+
+            </DataGrid>
+        </StackPanel>
+        <Button Content="Add User" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="11,0,0,0" Name="BtnAdd" Click="BtnAdd_Click"/>
+        <Label Content="User Section" HorizontalAlignment="Left" Margin="521,-6,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20"/>
+
+    </Grid>
+</UserControl>

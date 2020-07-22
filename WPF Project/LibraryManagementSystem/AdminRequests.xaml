@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="LibraryManagementSystem.AdminRequests"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManagementSystem"
+             mc:Ignorable="d" 
+             d:DesignHeight="362" d:DesignWidth="655">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="655" Margin="10,30,-10,0">
+            <DataGrid IsReadOnly="True" Height="333" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Margin="0,0,24,0" x:Name="dgRequests" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Date Requested" Binding="{Binding DateRequested}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="User Id" Binding="{Binding UserId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="User Name" Binding="{Binding UserName}"></DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Actions">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnAccept" Content=" Accept " Click="BtnAccept_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnReject" Content=" Reject " Click="BtnReject_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <Label Content="Requests Section" HorizontalAlignment="Left" Margin="479,-7,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20"/>
+
+    </Grid>
+</UserControl>

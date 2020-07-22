@@ -1,0 +1,27 @@
+﻿<Window x:Class="LibraryManagementSystem.AdminAddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        Title="Add User" Height="371" Width="334">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/yoab-anderson-IHC5LPAoGrs-unsplash (2).jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="294" Margin="20,22,0,0" Stroke="Black" VerticalAlignment="Top" Width="286" Opacity="0.705" Fill="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="30,22,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Admission Number" HorizontalAlignment="Left" Margin="30,79,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="30,54,0,0" TextWrapping="Wrap" Text="" Name="tbUName" VerticalAlignment="Top" Width="262"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="30,110,0,0" TextWrapping="Wrap" Text="" Name="tbUAdNo" VerticalAlignment="Top" Width="262"/>
+        <Label Content="Email Address" HorizontalAlignment="Left" Margin="30,135,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="30,166,0,0" TextWrapping="Wrap" Text="" Name="tbUEmail"  VerticalAlignment="Top" Width="262"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="30,191,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="30,222,0,0" TextWrapping="Wrap" Text="" Name="tbUPass" VerticalAlignment="Top" Width="262"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Height="26" Margin="30,277,0,0" Name="BtnSubmit" Click="BtnSubmit_Click" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

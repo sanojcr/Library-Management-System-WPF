@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="LibraryManagementSystem.UserTransaction"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManagementSystem"
+             mc:Ignorable="d" 
+             d:DesignHeight="362" d:DesignWidth="655">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="332" Margin="10,30,0,0" VerticalAlignment="Top" Width="277" Name="requestStackPanel">
+            <DataGrid IsReadOnly="True" Height="332" Name="dgRequest" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Requested Date" Binding="{Binding DateRequested}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="332" Margin="298,30,0,0" VerticalAlignment="Top" Width="347" Name="returnStackPanel">
+            <DataGrid IsReadOnly="True" Height="332" Name="dgReturn" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Recieved Date" Binding="{Binding DateRecieved}"></DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Actions">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnReturn" Content=" Return " Click="BtnReturn_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <Label Content="Recieved Books" HorizontalAlignment="Left" Margin="512,-6,-78,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221"/>
+        <Label Content="Requested Books" HorizontalAlignment="Left" Margin="137,-6,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221"/>
+
+    </Grid>
+</UserControl>

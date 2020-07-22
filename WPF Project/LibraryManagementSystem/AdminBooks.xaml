@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="LibraryManagementSystem.AdminBooks"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManagementSystem"
+             mc:Ignorable="d" 
+             d:DesignHeight="362" d:DesignWidth="655">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="655" Margin="10,30,-10,0">
+            <DataGrid IsReadOnly="True" Height="333" Margin="0,0,24,0" x:Name="dgBooks" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Author" Binding="{Binding BookAuthor}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book ISBN" Binding="{Binding BookISBN}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Price" Binding="{Binding BookPrice}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Copies" Binding="{Binding BookCopies}"></DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Actions">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnEdit" Content=" Edit " Click="BtnEdit_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="BtnDelete" Content=" Delete " Click="BtnDelete_Click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <Button Content="Add Book" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,0,0,0" Name="BtnAdd" Click="BtnAdd_Click"/>
+        <Label Content="Book Section" HorizontalAlignment="Left" Margin="521,-7,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20"/>
+
+
+    </Grid>
+</UserControl>

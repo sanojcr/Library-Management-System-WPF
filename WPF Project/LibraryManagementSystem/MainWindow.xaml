@@ -1,0 +1,30 @@
+﻿<Window x:Class="LibraryManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow" ResizeMode="NoResize"
+        Title="Library Management System" Height="398" Width="727">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/stanislav-kondratiev-6pO3QFkk7hQ-unsplash.jpg"/>
+    </Window.Background>
+
+    <Grid>
+
+        <Rectangle Fill="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" HorizontalAlignment="Left" Height="328" Margin="46,18,0,0" Stroke="Black" VerticalAlignment="Top" Width="630" Opacity="0.7"/>
+
+
+
+        <Button Content="User" HorizontalAlignment="Left" Margin="168,267,0,0" VerticalAlignment="Top" Width="74" x:Name="BtnUser" Click="BtnUser_Click"/>
+        <Button Content="Admin" HorizontalAlignment="Left" Margin="465,267,0,0" VerticalAlignment="Top" Width="74" x:Name="BtnAdmin" Click="BtnAdmin_Click" RenderTransformOrigin="1.014,0.75"/>
+        <Image HorizontalAlignment="Left" Height="145" Margin="136,103,0,0" VerticalAlignment="Top" Width="142" Source="/Images/icons8-user-100.png" />
+        <Image HorizontalAlignment="Left" Height="145" Margin="435,103,0,0" VerticalAlignment="Top" Width="142" Source="/Images/icons8-admin-settings-male-100.png" />
+        <Label Content="Welcome to Library Management System" Margin="177,35,0,0" FontWeight="Bold" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FFB9FFEF" Background="{x:Null}" FontFamily="Sweet Hipster"/>
+        <Label Content="Contact us : abcd@gmail.com" HorizontalAlignment="Left" Margin="227,292,0,0" VerticalAlignment="Top" Foreground="#FFB9FFEF" FontFamily="Sweet Hipster" FontSize="36" Background="{x:Null}"/>
+
+
+
+    </Grid>
+</Window>

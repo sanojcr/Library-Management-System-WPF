@@ -1,0 +1,14 @@
+C:\Users\ideapad\source\repos\LibraryMSWF.DAL\bin\Debug\LibraryMSWF.DAL.dll.config
+C:\Users\ideapad\source\repos\LibraryMSWF.DAL\bin\Debug\LibraryMSWF.DAL.dll
+C:\Users\ideapad\source\repos\LibraryMSWF.DAL\bin\Debug\LibraryMSWF.DAL.pdb
+C:\Users\ideapad\source\repos\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.dll
+C:\Users\ideapad\source\repos\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.pdb
+C:\Users\ideapad\source\repos\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.csprojAssemblyReference.cache
+C:\Users\ideapad\source\repos\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ideapad\Desktop\Team 1 Projects\Parallel Projects\Sanoj C R\WPF\WPF Project\LibraryMSWF.DAL\bin\Debug\LibraryMSWF.DAL.dll.config
+C:\Users\ideapad\Desktop\Team 1 Projects\Parallel Projects\Sanoj C R\WPF\WPF Project\LibraryMSWF.DAL\bin\Debug\LibraryMSWF.DAL.dll
+C:\Users\ideapad\Desktop\Team 1 Projects\Parallel Projects\Sanoj C R\WPF\WPF Project\LibraryMSWF.DAL\bin\Debug\LibraryMSWF.DAL.pdb
+C:\Users\ideapad\Desktop\Team 1 Projects\Parallel Projects\Sanoj C R\WPF\WPF Project\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.csprojAssemblyReference.cache
+C:\Users\ideapad\Desktop\Team 1 Projects\Parallel Projects\Sanoj C R\WPF\WPF Project\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ideapad\Desktop\Team 1 Projects\Parallel Projects\Sanoj C R\WPF\WPF Project\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.dll
+C:\Users\ideapad\Desktop\Team 1 Projects\Parallel Projects\Sanoj C R\WPF\WPF Project\LibraryMSWF.DAL\obj\Debug\LibraryMSWF.DAL.pdb

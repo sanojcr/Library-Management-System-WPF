@@ -1,0 +1,21 @@
+﻿<Window x:Class="LibraryManagementSystem.UserHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow" ResizeMode="NoResize"
+        Title="User Home" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/stanislav-kondratiev-6pO3QFkk7hQ-unsplash.jpg"/>
+    </Window.Background>
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="362" Margin="127,33,0,0" VerticalAlignment="Top" Width="655" Name="userStackPanel">
+
+        </StackPanel>
+        <Button Content="Borrow" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="100" Name="BtnBorrow" Click="BtnBorrow_Click"/>
+        <Button Content="Transaction" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="100" Name="BtnTransaction" Click="BtnTransaction_Click"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" Width="100" x:Name="BtnLogout" Click="BtnLogout_Click"/>
+    </Grid>
+</Window>
